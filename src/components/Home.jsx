@@ -1,11 +1,11 @@
-import { surahs } from '../Surahs/surahs';
+import { surahs } from '../Surahs/surahs.js';
 import SurahNavigator from './SurahNavigator';
 const Home = () => {
-	return(
+	return (
 		<div>
 			{
-				surahs.map((surah) => 
-				<SurahNavigator name={surah.name} key={surah.name}></SurahNavigator>)
+				surahs.map((surah) =>
+					<SurahNavigator surah={surah} key={surah.name}/>)
 			}
 		</div>
 	)

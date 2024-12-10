@@ -1,6 +1,13 @@
-const SurahNavigator = (name) => {
+import { Link } from "react-router-dom";
+
+const SurahNavigator = ({surah}) => {
+	console.log(surah.name);
+	
 	return (
-		<div>{name}</div>
+		<div>
+			<Link to={`/${surah.name}`} state={surah}>{surah.name}</Link>
+			{/* {surah.name} */}
+		</div>
 	)
 };
 
