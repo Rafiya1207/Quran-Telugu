@@ -4,7 +4,7 @@ const SurahNavigator = ({surah}) => {
 	console.log(surah.name);
 	
 	return (
-		<div>
+		<div className="navigator">
 			<Link to={`/${surah.name}`} state={surah}>{surah.name}</Link>
 			{/* {surah.name} */}
 		</div>

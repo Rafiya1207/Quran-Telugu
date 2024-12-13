@@ -2,7 +2,7 @@ import { surahs } from '../Surahs/surahs.js';
 import SurahNavigator from './SurahNavigator';
 const Home = () => {
 	return (
-		<div>
+		<div className='page-font'>
 			{
 				surahs.map((surah) =>
 					<SurahNavigator surah={surah} key={surah.name}/>)
