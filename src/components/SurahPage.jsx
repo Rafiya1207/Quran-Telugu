@@ -2,6 +2,8 @@ import { useLocation } from "react-router-dom";
 
 const SurahPage = () => {
 	const location = useLocation();
+	console.log(location);
+	
 	return (
 		<div className="page-font">
 			{location.state.name}

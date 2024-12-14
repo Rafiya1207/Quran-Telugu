@@ -10,7 +10,7 @@ function App() {
 			{/* <Link to={'/'}>home</Link> */}
 			{/* <Home /> */}
 			<Routes>
-				<Route path='/' element={<Home />} />
+				<Route path='/Quran-Telugu' element={<Home />} />
 				<Route path='/:id' element={<SurahPage />} />
 			</Routes>
 		</>
